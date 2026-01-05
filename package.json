@@ -1,6 +1,6 @@
 {
   "name": "jxon",
-  "version": "2.0.0-beta.5",
+  "version": "2.0.1",
   "description": "A complete, bidirectional, JXON library",
   "keywords": [
     "jxon",
@@ -38,11 +38,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/tyrasd/jxon.git"
+    "url": "git://github.com/cyclinghero/jxon.git"
   },
   "license": "GPL v3",
   "dependencies": {
-    "xmldom": "^0.1.21"
+    "@xmldom/xmldom": "0.8.11"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
