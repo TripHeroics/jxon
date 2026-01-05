@@ -1,5 +1,5 @@
 {
-  "name": "jxon",
+  "name": "@cyclinghero/jxon",
   "version": "2.0.1",
   "description": "A complete, bidirectional, JXON library",
   "keywords": [
@@ -17,14 +17,15 @@
     "json to xml",
     "json2xml"
   ],
-  "main": "jxon.js",
-  "scripts": {
-    "pretest": "npm ls --depth=Infinity > /dev/null",
-    "test": "npm run test-node && npm run test-webkit",
-    "test-node": "mocha test/spec.js",
-    "test-webkit": "browserify test/spec.js > test/spec.browserify.js && mocha-phantomjs test/index.html",
-    "minify": "uglifyjs jxon.js --comments all --ascii --mangle --output jxon.min.js"
+  "homepage": "https://github.com/cyclinghero/jxon#readme",
+  "bugs": {
+    "url": "https://github.com/cyclinghero/jxon/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cyclinghero/jxon.git"
+  },
+  "license": "GPL-3.0-or-later",
   "author": "MDN (https://developer.mozilla.org/en-US/docs/JXON)",
   "contributors": [
     {
@@ -36,11 +37,21 @@
       "email": "igor@ground.gr"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/cyclinghero/jxon.git"
+  "type": "commonjs",
+  "main": "jxon.js",
+  "browser": {
+    "xmldom": false
   },
-  "license": "GPL v3",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "npm ls --depth=Infinity > /dev/null",
+    "test": "npm run test-node && npm run test-webkit",
+    "test-node": "mocha test/spec.js",
+    "test-webkit": "browserify test/spec.js > test/spec.browserify.js && mocha-phantomjs test/index.html",
+    "minify": "uglifyjs jxon.js --comments all --ascii --mangle --output jxon.min.js"
+  },
   "dependencies": {
     "@xmldom/xmldom": "0.8.11"
   },
@@ -49,8 +60,5 @@
     "chai": "^3.4.1",
     "mocha": "~2.1.0",
     "mocha-phantomjs": "^4.0.2"
-  },
-  "browser": {
-    "xmldom": false
   }
 }
