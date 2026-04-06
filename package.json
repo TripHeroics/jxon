@@ -1,6 +1,6 @@
 {
-  "name": "@cyclinghero/jxon",
-  "version": "2.0.1",
+  "name": "@tripheroics/jxon",
+  "version": "2.0.2",
   "description": "A complete, bidirectional, JXON library",
   "keywords": [
     "jxon",
@@ -17,13 +17,13 @@
     "json to xml",
     "json2xml"
   ],
-  "homepage": "https://github.com/cyclinghero/jxon#readme",
+  "homepage": "https://github.com/tripheroics/jxon#readme",
   "bugs": {
-    "url": "https://github.com/cyclinghero/jxon/issues"
+    "url": "https://github.com/tripheroics/jxon/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/cyclinghero/jxon.git"
+    "url": "git://github.com/tripheroics/jxon.git"
   },
   "license": "GPL-3.0-or-later",
   "author": "MDN (https://developer.mozilla.org/en-US/docs/JXON)",
